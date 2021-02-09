@@ -5,18 +5,20 @@ import Link from "next/link";
 
 import * as styled from './styled'
 
-const name = "Douglas froes";
 export const siteTitle = "Portfolio Douglas S. Froes";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children, home }: any) {
   const [menu, setMenu] = useState(false)
   const test = {
     display: 'inline-block',
     width: 320,
     transform: 'translateX(0)'
   }
+
+
+
   return (
-    <div className={styles.container}>
+    <div className={styles.container} >
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -37,7 +39,7 @@ export default function Layout({ children, home }) {
         />
         <link href="/fontawesome/css/all.css" rel="stylesheet"></link>
       </Head>
-      <body>
+      <div>
         <styled.menuResponsive>
           <i className="fa fa-bars" id="menu-open" onClick={() => setMenu(!menu)}></i>
           <styled.menuDiv style={menu ? test : {}} >
@@ -47,17 +49,17 @@ export default function Layout({ children, home }) {
             <styled.conteiner>
               <styled.imageDiv>
                 <Link href="/">
-                  <styled.imageRender src='https://avatars.githubusercontent.com/u/47641739?s=460&u=60d4e21d8f03d660978cef630b88284610261608&v=4' />
+                  <img src='https://avatars.githubusercontent.com/u/47641739?s=460&u=60d4e21d8f03d660978cef630b88284610261608&v=4' alt="douglasfroes" />
                 </Link>
               </styled.imageDiv>
               <styled.authDiv>
-                <styled.authH4>Douglas S. Froes</styled.authH4>
-                <styled.authSpan>Programador Full Stack</styled.authSpan>
+                <h4>Douglas S. Froes</h4>
+                <span>Programador Full Stack</span>
               </styled.authDiv>
               <styled.menuNav role="navigation">
                 <ul>
                   <li><Link href="/"><p>Sobre</p></Link></li>
-                  <li><Link href="/main"><p>Habilidades</p></Link></li>
+                  <li><Link href="/skills"><p>Habilidades</p></Link></li>
                   <li><Link href="/"><p>Meu trabalho</p></Link></li>
                   <li><Link href="/"><p>Contate-me</p></Link></li>
                 </ul>
@@ -99,7 +101,7 @@ export default function Layout({ children, home }) {
             </div>
           )
         }
-      </body >
+      </div>
     </div >
   );
 }

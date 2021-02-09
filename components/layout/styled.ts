@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const menuResponsive = styled.div`
+export const menuResponsive = styled.div` 
  #menu-open{
     display: none;
     z-index: 999;
@@ -9,7 +9,7 @@ export const menuResponsive = styled.div`
     top: 0;
     left: 0;
     color: #a43f49;
-    background-color: #fff;
+    background-color: #fff; 
     width: 60px;
     height: 60px;
     text-align: center;
@@ -42,7 +42,7 @@ export const menuResponsive = styled.div`
 
 export const menuDiv = styled.div`
   left: 10%;
-   -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+  -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
   -webkit-overflow-scrolling: touch;
   background-color: #a43f49;
   box-sizing: border-box;
@@ -92,32 +92,32 @@ export const imageDiv = styled.div`
 margin-top: 60px;
 display: flex;
 justify-content:center;
-`;
 
-export const imageRender = styled.img`
+  img{
     width: 140px;
     height: 140px;
     border-radius: 50%;
+  }
 `;
+
 
 export const authDiv = styled.div`
   margin: 40px 4px 60px;
-`;
-
-export const authH4 = styled.h4`
-  font-size: 22px;
+  h4{
+    font-size: 22px;
     font-weight: 700;
     color: #fff;
     letter-spacing: 0.25px;
     margin-bottom: 0;
     margin-top: 0;
-`;
-
-export const authSpan = styled.span`
-font-size: 13px;
+  }
+  span{
+    font-size: 13px;
     font-style: italic;
     color: #fff;
-`
+  }
+`;
+
 
 export const menuNav = styled.nav`
     text-align: center;
