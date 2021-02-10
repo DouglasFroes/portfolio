@@ -1,5 +1,5 @@
-import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
+import Head from 'next/head'
+import Layout, { siteTitle } from '../components/layout'
 
 export default function Home() {
   return (
@@ -8,14 +8,13 @@ export default function Home() {
         <title>{siteTitle}</title>
       </Head>
     </Layout>
-  );
+  )
 }
 
 export async function getStaticProps() {
   return {
-    props: {
-    },
-  };
+    props: {}
+  }
 }
 
 // function ola() {

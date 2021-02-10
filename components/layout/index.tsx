@@ -1,11 +1,11 @@
-import { useState } from 'react'
-import Head from "next/head";
-import styles from "../layout.module.css";
-import Link from "next/link";
+import React, { useState } from 'react'
+import Head from 'next/head'
+import styles from '../layout.module.css'
+import Link from 'next/link'
 
 import * as styled from './styled'
 
-export const siteTitle = "Portfolio Douglas S. Froes";
+export const siteTitle = 'Portfolio Douglas S. Froes'
 
 export default function Layout({ children, home }: any) {
   const [menu, setMenu] = useState(false)
@@ -15,10 +15,8 @@ export default function Layout({ children, home }: any) {
     transform: 'translateX(0)'
   }
 
-
-
   return (
-    <div className={styles.container} >
+    <div className={styles.container}>
       <Head>
         <link rel="icon" href="/favicon.ico" />
         <meta
@@ -41,15 +39,26 @@ export default function Layout({ children, home }: any) {
       </Head>
       <div>
         <styled.menuResponsive>
-          <i className="fa fa-bars" id="menu-open" onClick={() => setMenu(!menu)}></i>
-          <styled.menuDiv style={menu ? test : {}} >
+          <i
+            className="fa fa-bars"
+            id="menu-open"
+            onClick={() => setMenu(!menu)}
+          ></i>
+          <styled.menuDiv style={menu ? test : {}}>
             <div id="menu-close" style={menu ? {} : { display: 'none' }}>
-              <i className="fa fa-times" id="menu-open2" onClick={() => setMenu(!menu)}></i>
+              <i
+                className="fa fa-times"
+                id="menu-open2"
+                onClick={() => setMenu(!menu)}
+              ></i>
             </div>
             <styled.conteiner>
               <styled.imageDiv>
                 <Link href="/">
-                  <img src='https://avatars.githubusercontent.com/u/47641739?s=460&u=60d4e21d8f03d660978cef630b88284610261608&v=4' alt="douglasfroes" />
+                  <img
+                    src="https://avatars.githubusercontent.com/u/47641739?s=460&u=60d4e21d8f03d660978cef630b88284610261608&v=4"
+                    alt="douglasfroes"
+                  />
                 </Link>
               </styled.imageDiv>
               <styled.authDiv>
@@ -58,29 +67,54 @@ export default function Layout({ children, home }: any) {
               </styled.authDiv>
               <styled.menuNav role="navigation">
                 <ul>
-                  <li><Link href="/"><p>Sobre</p></Link></li>
-                  <li><Link href="/skills"><p>Habilidades</p></Link></li>
-                  <li><Link href="/"><p>Meu trabalho</p></Link></li>
-                  <li><Link href="/"><p>Contate-me</p></Link></li>
+                  <li>
+                    <Link href="/">
+                      <p>Sobre</p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/skills">
+                      <p>Habilidades</p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <p>Meu trabalho</p>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/">
+                      <p>Contate-me</p>
+                    </Link>
+                  </li>
                 </ul>
               </styled.menuNav>
               <styled.socialDiv>
-                <ul >
+                <ul>
                   <li>
                     <a href="https://fb.com/templatemo">
-                      <i className="fab fa-facebook-square"></i></a>
+                      <i className="fab fa-facebook-square"></i>
+                    </a>
                   </li>
                   <li>
-                    <a href="#"><i className="fab fa-whatsapp"></i></a>
+                    <a href="#">
+                      <i className="fab fa-whatsapp"></i>
+                    </a>
                   </li>
                   <li>
-                    <a href="#"><i className="fab fa-linkedin-in"></i></a>
+                    <a href="#">
+                      <i className="fab fa-linkedin-in"></i>
+                    </a>
                   </li>
                   <li>
-                    <a href="#"><i className="fab fa-github"></i></a>
+                    <a href="#">
+                      <i className="fab fa-github"></i>
+                    </a>
                   </li>
                   <li>
-                    <a href="#"><i className="fa fa-rss"></i></a>
+                    <a href="#">
+                      <i className="fa fa-rss"></i>
+                    </a>
                   </li>
                 </ul>
               </styled.socialDiv>
@@ -88,20 +122,18 @@ export default function Layout({ children, home }: any) {
                 <p>Copyright 2021 Douglas Froes</p>
               </styled.bottomDiv>
             </styled.conteiner>
-          </styled.menuDiv >
+          </styled.menuDiv>
         </styled.menuResponsive>
 
         <main>{children}</main>
-        {
-          !home && (
-            <div className={styles.backToHome}>
-              <Link href="/">
-                <a>← Back to home</a>
-              </Link>
-            </div>
-          )
-        }
+        {!home && (
+          <div className={styles.backToHome}>
+            <Link href="/">
+              <a>← Back to home</a>
+            </Link>
+          </div>
+        )}
       </div>
-    </div >
-  );
+    </div>
+  )
 }
