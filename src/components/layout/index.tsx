@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+// import { AppProps } from 'next/app'
 import Head from 'next/head'
 import styles from '../layout.module.css'
 import Link from 'next/link'
@@ -7,8 +8,8 @@ import * as styled from './styled'
 
 export const siteTitle = 'Portfolio Douglas S. Froes'
 
-export default function Layout({ children, home }: any) {
-  console.log(home)
+const Layout: React.FC<any> = ({ Component, pageProps }) => {
+  console.log(pageProps)
   const [menu, setMenu] = useState(false)
   const test = {
     display: 'inline-block',
@@ -126,7 +127,7 @@ export default function Layout({ children, home }: any) {
         </styled.menuDiv>
       </styled.menuResponsive>
 
-      <styled.section>{children}</styled.section>
+      <styled.section>{Component}</styled.section>
 
       {/* {!home && (
         <div className={styles.backToHome}>
@@ -138,3 +139,5 @@ export default function Layout({ children, home }: any) {
     </div>
   )
 }
+
+export default Layout

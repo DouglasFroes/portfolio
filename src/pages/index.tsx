@@ -1,9 +1,10 @@
+import React from 'react'
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 
-export default function Home() {
+const Home: React.FC = () => {
   return (
-    <Layout home>
+    <Layout pageProps>
       <Head>
         <title>{siteTitle}</title>
       </Head>
@@ -16,6 +17,8 @@ export async function getStaticProps() {
     props: {}
   }
 }
+
+export default Home
 
 // function ola() {
 //   const utterance = new SpeechSynthesisUtterance();
