@@ -5,26 +5,26 @@ import Layout from '../../components/layout'
 import * as styled from '../../styles/skills'
 
 const Skills: React.FC = () => {
-  // const skills = [
-  //   {
-  //     name: 'HTML5 &amp; CSS3',
-  //     descripiton:
-  //       'Phasellus non convallis dolor. Integer tempor hendrerit arcu at bibendum. Sed ac ante non metus vehicula congue quis eget eros.',
-  //     image: '/images/first-white-icon.png'
-  //   }
-  // ]
+  const skills = [
+    {
+      name: 'HTML5 &amp; CSS3',
+      descripiton:
+        'Phasellus non convallis dolor. Integer tempor hendrerit arcu at bibendum. Sed ac ante non metus vehicula congue quis eget eros.',
+      image: '/images/first-white-icon.png'
+    }
+  ]
 
-  // const ListSkills = skills.map((item: any, index: any) => {
-  //   return (
-  //     <styled.itemSkill key={index}>
-  //       <styled.viewSkill>
-  //         <img src={item.image} alt={item.name} />
-  //         <h4>{item.name}</h4>
-  //         <p>{item.descripiton}</p>
-  //       </styled.viewSkill>
-  //     </styled.itemSkill>
-  //   )
-  // })
+  const ListSkills = skills.map((item: any, index: any) => {
+    return (
+      <styled.itemSkill key={index}>
+        <styled.viewSkill>
+          <img src={item.image} alt={item.name} />
+          <h4>{item.name}</h4>
+          <p>{item.descripiton}</p>
+        </styled.viewSkill>
+      </styled.itemSkill>
+    )
+  })
 
   return (
     <Layout>
@@ -32,7 +32,7 @@ const Skills: React.FC = () => {
         <title>habilidades</title>
       </Head>
       <styled.container>
-        {/* <styled.heading>
+        <styled.heading>
           <h2>What I’m good at?</h2>
           <div className="line-dec"></div>
           <span>
@@ -50,7 +50,7 @@ const Skills: React.FC = () => {
           {ListSkills}
           {ListSkills}
           {ListSkills}
-        </styled.body> */}
+        </styled.body>
       </styled.container>
     </Layout>
   )
