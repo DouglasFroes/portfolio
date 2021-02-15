@@ -149,6 +149,11 @@ export const menuNav = styled.nav`
     margin: 0;
   }
 
+  #active {
+    background: #fff;
+    color: #8c363e;
+  }
+
   li:last-child p {
     border-bottom: 2px solid #fff;
   }

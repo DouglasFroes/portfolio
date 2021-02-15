@@ -27,7 +27,7 @@ const Skills: React.FC = () => {
   })
 
   return (
-    <Layout>
+    <Layout page={2}>
       <Head>
         <title>habilidades</title>
       </Head>

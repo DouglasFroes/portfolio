@@ -8,8 +8,8 @@ import * as styled from './styled'
 
 export const siteTitle = 'Portfolio Douglas S. Froes'
 
-const Layout: React.FC<any> = ({ children, pageProps }) => {
-  console.log(pageProps)
+const Layout: React.FC<any> = ({ children, page }) => {
+  console.log(page)
   const [menu, setMenu] = useState(false)
   const test = {
     display: 'inline-block',
@@ -76,12 +76,12 @@ const Layout: React.FC<any> = ({ children, pageProps }) => {
                 </li>
                 <li>
                   <Link href="/skills">
-                    <p>Habilidades</p>
+                    <p id={page === 2 ? 'active' : ''}>Habilidades</p>
                   </Link>
                 </li>
                 <li>
-                  <Link href="/">
-                    <p>Meu trabalho</p>
+                  <Link href="/work">
+                    <p id={page === 3 ? 'active' : ''}>Meu trabalho</p>
                   </Link>
                 </li>
                 <li>
