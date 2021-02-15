@@ -65,9 +65,7 @@ export const menuDiv = styled.div`
   @media screen and (max-width: 1280px) and (min-width: 846px) {
     width: 25%;
   }
-  @media screen and (max-width: 1280px) {
-    left: 0;
-  }
+
   ::-webkit-scrollbar {
     display: none;
   }
@@ -79,6 +77,14 @@ export const menuDiv = styled.div`
     transition: transform 233ms cubic-bezier(0, 0, 0.21, 1);
     transition: transform 233ms cubic-bezier(0, 0, 0.21, 1),
       -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
+  }
+
+  @media screen and (max-width: 1680px) {
+    left: 5%;
+  }
+
+  @media screen and (max-width: 1280px) {
+    left: 0;
   }
 `
 

@@ -8,7 +8,7 @@ import * as styled from './styled'
 
 export const siteTitle = 'Portfolio Douglas S. Froes'
 
-const Layout: React.FC<any> = ({ Component, pageProps }) => {
+const Layout: React.FC<any> = ({ children, pageProps }) => {
   console.log(pageProps)
   const [menu, setMenu] = useState(false)
   const test = {
@@ -127,7 +127,7 @@ const Layout: React.FC<any> = ({ Component, pageProps }) => {
         </styled.menuDiv>
       </styled.menuResponsive>
 
-      <styled.section>{Component}</styled.section>
+      <styled.section>{children}</styled.section>
 
       {/* {!home && (
         <div className={styles.backToHome}>
