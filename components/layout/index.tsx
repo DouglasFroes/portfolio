@@ -8,6 +8,7 @@ import * as styled from './styled'
 export const siteTitle = 'Portfolio Douglas S. Froes'
 
 export default function Layout({ children, home }: any) {
+  console.log(home)
   const [menu, setMenu] = useState(false)
   const test = {
     display: 'inline-block',
