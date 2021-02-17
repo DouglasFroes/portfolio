@@ -71,22 +71,22 @@ const Skills: React.FC = () => {
     }
   ]
 
-  const slider = [
-    { title: 'tecteca', image: '/images/tecteca1.jpeg' },
-    { title: 'tecteca', image: '/images/tecteca2.jpeg' },
-    { title: 'tecteca', image: '/images/tecteca3.jpeg' },
-    { title: 'WT Soluções', image: '/images/wt.jpeg' }
-  ]
-  const sliderRender = slider.map((item: any, index: any) => {
-    return (
-      <div key={index}>
-        <div className="separa">
-          <img src={item.image} alt={item.name} />
-          <p>{item.title}</p>
-        </div>
-      </div>
-    )
-  })
+  // const slider = [
+  //   { title: 'tecteca', image: '/images/tecteca1.jpeg' },
+  //   { title: 'tecteca', image: '/images/tecteca2.jpeg' },
+  //   { title: 'tecteca', image: '/images/tecteca3.jpeg' },
+  //   { title: 'WT Soluções', image: '/images/wt.jpeg' }
+  // ]
+  // const sliderRender = slider.map((item: any, index: any) => {
+  //   return (
+  //     <div key={index}>
+  //       <div className="separa">
+  //         <img src={item.image} alt={item.name} />
+  //         <p>{item.title}</p>
+  //       </div>
+  //     </div>
+  //   )
+  // })
 
   const ListSkills = skills.map((item: any, index: any) => {
     const sliderOrint = item?.imagesVertical ? settings : settings2
