@@ -75,10 +75,10 @@ export const viewSkill = styled.div`
   transition: all 0.5s;
 
   img {
-    width: 70px;
+    max-width: 170px;
     height: 70px;
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
     background-size: cover;
     background-repeat: no-repeat;
     transition: all 0.5s;

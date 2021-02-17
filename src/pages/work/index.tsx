@@ -32,18 +32,42 @@ const Skills: React.FC = () => {
       }
     ]
   }
+
+  const settings2 = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000
+  }
   const skills = [
     {
-      name: 'HTML5 &amp; CSS3',
-      descripiton:
-        'Phasellus non convallis dolor. Integer tempor hendrerit arcu at bibendum. Sed ac ante non metus vehicula congue quis eget eros.',
-      image: '/images/first-white-icon.png'
+      name: 'tecteca',
+      descripiton: `A TecTeca é um aplicativo de 
+      livros infantis, desenvovido-se um aplicativo em react native utilizadado
+      as pricipais tecnologias do mercado`,
+      imagesVertical: false,
+      image: [
+        { image: '/images/tecteca1.jpeg' },
+        { image: '/images/tecteca2.jpeg' },
+        { image: '/images/tecteca3.jpeg' }
+      ]
     },
     {
-      name: 'HTML5 &amp; CSS3',
-      descripiton:
-        'Phasellus non convallis dolor. Integer tempor hendrerit arcu at bibendum. Sed ac ante non metus vehicula congue quis eget eros.',
-      image: '/images/first-white-icon.png'
+      name: 'WT Soluções',
+      descripiton: `WT Soluticoes é uma empresa de saneamento basico, foi 
+      desenvoido uma api e um aplicativo para o gestão de tarefas e monitoramento
+      de atividades`,
+      imagesVertical: true,
+      image: [
+        { image: '/images/wt.jpeg' },
+        { image: '/images/wt2.jpeg' },
+        { image: '/images/wt3.jpeg' },
+        { image: '/images/wt4.jpeg' },
+        { image: '/images/wt5.jpeg' }
+      ]
     }
   ]
 
@@ -65,10 +89,22 @@ const Skills: React.FC = () => {
   })
 
   const ListSkills = skills.map((item: any, index: any) => {
+    const sliderOrint = item?.imagesVertical ? settings : settings2
+
     return (
       <styled.itemSkill key={index}>
         <styled.viewSkill>
-          <img src={item.image} alt={item.name} />
+          <Slider {...sliderOrint}>
+            {item?.image?.map((obj: any, index: any) => {
+              return (
+                <div key={index}>
+                  <div className="center">
+                    <img className="imageWork" src={obj.image} alt={obj.name} />
+                  </div>
+                </div>
+              )
+            })}
+          </Slider>
           <h4>{item.name}</h4>
           <p>{item.descripiton}</p>
         </styled.viewSkill>
@@ -100,9 +136,9 @@ const Skills: React.FC = () => {
             amet. Duis ac elit vulputate, lobortis arcu quis, vehicula mauris.
           </span>
         </styled.heading>
-        <styled.carosel>
+        {/* <styled.carosel>
           <Slider {...settings}>{sliderRender}</Slider>
-        </styled.carosel>
+        </styled.carosel> */}
         <styled.body>
           {ListSkills}
           {ListSkills}
