@@ -84,32 +84,32 @@ const Layout: React.FC<any> = ({ children, page }) => {
                     <p id={page === 3 ? 'active' : ''}>Meu trabalho</p>
                   </Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="/">
                     <p>Contate-me</p>
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </styled.menuNav>
             <styled.socialDiv>
               <ul>
                 <li>
-                  <a href="https://fb.com/templatemo">
+                  <a href="https://www.facebook.com/douglas.santos.940641">
                     <i className="fab fa-facebook-square"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://api.whatsapp.com/send?phone=5598987278721&text=Ola%2C%20Douglas.%20tudo%20bem%3F%20%20">
                     <i className="fab fa-whatsapp"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://www.linkedin.com/in/douglasfroes/">
                     <i className="fab fa-linkedin-in"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a href="https://github.com/DouglasFroes">
                     <i className="fab fa-github"></i>
                   </a>
                 </li>
