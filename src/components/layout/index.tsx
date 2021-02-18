@@ -71,7 +71,7 @@ const Layout: React.FC<any> = ({ children, page }) => {
               <ul>
                 <li>
                   <Link href="/">
-                    <p>Sobre</p>
+                    <p id={page === 1 ? 'active' : ''}>Sobre</p>
                   </Link>
                 </li>
                 <li>
