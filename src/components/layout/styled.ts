@@ -88,7 +88,7 @@ export const menuDiv = styled.div`
   }
 `
 
-export const conteiner = styled.div`
+export const container = styled.div`
   padding-left: 0;
   padding-right: 0;
   margin: 0 auto;

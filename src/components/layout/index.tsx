@@ -9,7 +9,6 @@ import * as styled from './styled'
 export const siteTitle = 'Portfolio Douglas S. Froes'
 
 const Layout: React.FC<any> = ({ children, page }) => {
-  console.log(page)
   const [menu, setMenu] = useState(false)
   const test = {
     display: 'inline-block',
@@ -54,7 +53,7 @@ const Layout: React.FC<any> = ({ children, page }) => {
               onClick={() => setMenu(!menu)}
             ></i>
           </div>
-          <styled.conteiner>
+          <styled.container>
             <styled.imageDiv>
               <Link href="/">
                 <img
@@ -84,11 +83,11 @@ const Layout: React.FC<any> = ({ children, page }) => {
                     <p id={page === 3 ? 'active' : ''}>Meu trabalho</p>
                   </Link>
                 </li>
-                {/* <li>
-                  <Link href="/">
-                    <p>Contate-me</p>
+                <li>
+                  <Link href="/contact">
+                    <p id={page === 4 ? 'active' : ''}>Contate-me</p>
                   </Link>
-                </li> */}
+                </li>
               </ul>
             </styled.menuNav>
             <styled.socialDiv>
@@ -123,7 +122,7 @@ const Layout: React.FC<any> = ({ children, page }) => {
             <styled.bottomDiv>
               <p>Copyright 2021 Douglas Froes</p>
             </styled.bottomDiv>
-          </styled.conteiner>
+          </styled.container>
         </styled.menuDiv>
       </styled.menuResponsive>
 
