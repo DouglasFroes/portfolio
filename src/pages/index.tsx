@@ -16,21 +16,27 @@ const Home: React.FC = () => {
           <div className="line-dec" />
           <span>
             Ola👋, Me chamo Douglas. <br /> Sou programador full stack e
-            apaixodo por tecnologias. Estou aqui para te aprensentar um pouco
-            sobre os meu trabalhos e habiladas.
+            apaixonado por tecnologias. Estou aqui para te apresentar um pouco
+            sobre os meu trabalhos e habilidades.
           </span>
         </styled.heading>
         <styled.body>
           <styled.infor>
             <styled.row>
               <styled.infImg>
-                <img src="/images/left-image.jpg" />
+                <img src="/images/formacao.jpeg" />
               </styled.infImg>
               <styled.infText>
                 <h4>Formação</h4>
                 <p>
                   Bacharel em Ciência da Computação, Na instituição Pitagoras de
                   São luis; Inicio: 2015, Termino: 2018.
+                </p>
+                <p>
+                  AceleraDev React (80 hrs) - Codenation
+                  <br />
+                  desenvolvimento de Aplicações Para Dispositivos Móveis (80
+                  hrs) - Pitagoras
                 </p>
               </styled.infText>
             </styled.row>
@@ -39,13 +45,14 @@ const Home: React.FC = () => {
               <styled.infText>
                 <h4>Area de atuação </h4>
                 <p>
-                  Atuo na area desenvolvimento de api rest, desenvolvimento web
-                  e criacão aplicativo mobile. Utilizando as pricipais
-                  tecnoligias e aplicados os pricipais consciteso do mercado.
+                  Atuo na area desenvolvimento de software, trabalho com
+                  desenvolvimento de api rest, no desenvolvimento web e
+                  desenvolvimento mobile. Sempre utilizando as principais
+                  tecnologias e aplicados os principais concites do mercado.
                 </p>
               </styled.infText>
               <styled.infImg>
-                <img src="/images/left-image.jpg" />
+                <img src="/images/trabalho.png" />
               </styled.infImg>
             </styled.row>
           </styled.infor>
@@ -55,19 +62,4 @@ const Home: React.FC = () => {
   )
 }
 
-export async function getStaticProps() {
-  return {
-    props: {}
-  }
-}
-
 export default Home
-
-// function ola() {
-//   const utterance = new SpeechSynthesisUtterance();
-
-//   utterance.lang = "pt-BR";
-//   utterance.text = "oi douglas";
-//   speechSynthesis.speak(utterance);
-// }
-// ola();

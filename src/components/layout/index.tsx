@@ -6,7 +6,7 @@ import Link from 'next/link'
 
 import * as styled from './styled'
 
-export const siteTitle = 'Portfolio Douglas S. Froes'
+export const siteTitle = 'Douglas S. Froes'
 
 const Layout: React.FC<any> = ({ children, page }) => {
   const [menu, setMenu] = useState(false)
@@ -65,6 +65,8 @@ const Layout: React.FC<any> = ({ children, page }) => {
             <styled.authDiv>
               <h4>Douglas S. Froes</h4>
               <span>Programador Full Stack</span>
+              <br />
+              <span>React Native | React | Express</span>
             </styled.authDiv>
             <styled.menuNav role="navigation">
               <ul>
@@ -110,11 +112,6 @@ const Layout: React.FC<any> = ({ children, page }) => {
                 <li>
                   <a href="https://github.com/DouglasFroes">
                     <i className="fab fa-github"></i>
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i className="fa fa-rss"></i>
                   </a>
                 </li>
               </ul>

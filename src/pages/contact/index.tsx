@@ -3,7 +3,7 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import emailjs from 'emailjs-com'
 
-import Layout from '../../components/layout'
+import Layout, { siteTitle } from '../../components/layout'
 import * as styled from '../../styles/contact'
 
 const Contact: React.FC = () => {
@@ -83,7 +83,7 @@ const Contact: React.FC = () => {
   return (
     <Layout page={4}>
       <Head>
-        <title>Contate-me</title>
+        <title>{siteTitle}</title>
       </Head>
       <styled.container>
         <styled.heading>

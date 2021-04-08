@@ -1,0 +1,82 @@
+{
+  "skills": [
+    {
+      "name": "React Native",
+      "description": "React Native é uma biblioteca Javascript criada pelo Facebook. É usada para desenvolver aplicativos para os sistemas Android e iOS de forma nativa.",
+      "image": "https://reactnative.dev/img/header_logo.svg"
+    },
+    {
+      "name": "React js",
+      "description": "O React é uma biblioteca JavaScript de código aberto com foco em criar interfaces de usuário em páginas web. É mantido pelo Facebook, Instagram, outras.",
+      "image": "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii0xMS41IC0xMC4yMzE3NCAyMyAyMC40NjM0OCI+CiAgPHRpdGxlPlJlYWN0IExvZ288L3RpdGxlPgogIDxjaXJjbGUgY3g9IjAiIGN5PSIwIiByPSIyLjA1IiBmaWxsPSIjNjFkYWZiIi8+CiAgPGcgc3Ryb2tlPSIjNjFkYWZiIiBzdHJva2Utd2lkdGg9IjEiIGZpbGw9Im5vbmUiPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIi8+CiAgICA8ZWxsaXBzZSByeD0iMTEiIHJ5PSI0LjIiIHRyYW5zZm9ybT0icm90YXRlKDYwKSIvPgogICAgPGVsbGlwc2Ugcng9IjExIiByeT0iNC4yIiB0cmFuc2Zvcm09InJvdGF0ZSgxMjApIi8+CiAgPC9nPgo8L3N2Zz4K"
+    },
+    {
+      "name": "Node.js",
+      "description": "Node.js é um software de código aberto, multiplataforma, que executa códigos JavaScript no backend/servidor e frontend/interface, baseado no V8 interpretador de JavaScript em C++ do Google, mantido pela fundação Node.js em parceria com a Linux Foundation.",
+      "image": "https://nodejs.org/static/images/logo.svg"
+    },
+    {
+      "name": "Express.js",
+      "description": "Express.js é um framework para aplicações web para Node.js, lançado como software livre e de código aberto sob a Licença MIT. É feito para otimizar a construção de aplicações web e API's. É um dos mais populares frameworks para servidores em Node.js.",
+      "image": "/images/express.png"
+    },
+    {
+      "name": "TypeORM ",
+      "description": "TypeORM é um ORM que pode ser executado em diversas plataformas e pode ser usado com TypeScript e JavaScript. Seu objetivo é sempre oferecer suporte aos recursos JavaScript mais recentes e fornecer recursos adicionais que o ajudem a desenvolver qualquer tipo de aplicativo que use bancos de dados.",
+      "image": "https://github.com/typeorm/typeorm/raw/master/resources/logo_big.png"
+    },
+    {
+      "name": "TypeScript",
+      "description": "TypeScript é um superconjunto de JavaScript desenvolvido pela Microsoft que adiciona tipagem e alguns outros recursos a linguagem. Anders Hejlsberg, arquiteto da linguagem C# e criador das linguagens Delphi e Turbo Pascal, trabalhou no desenvolvimento do TypeScript.",
+      "image": "/images/typescript.png"
+    },
+    {
+      "name": "Firebase",
+      "description": "Firebase é uma plataforma desenvolvida pelo Google para a criação de aplicativos móveis e da web. Originalmente, era uma empresa independente fundada em 2011. Em 2014, o Google adquiriu a plataforma e agora é sua principal oferta para o desenvolvimento de aplicativos.",
+      "image": "https://www.gstatic.com/devrel-devsite/prod/v4ff7513a940c844d7a200d0833ef676f25fef10662a3b57ca262bcf76cbd98e2/firebase/images/lockup.png"
+    },
+    {
+      "name": "Docker ",
+      "description": "Docker é um conjunto de produtos de plataforma como serviço que usam virtualização de nível de sistema operacional para entregar software em pacotes chamados contêineres. Os contêineres são isolados uns dos outros e agrupam seus próprios softwares, bibliotecas e arquivos de configuração",
+      "image": "/images/docker.png"
+    },
+    {
+      "name": "Next.js",
+      "description": "Next.js é uma estrutura da web de desenvolvimento front-end React de código aberto que permite funcionalidades como renderização do lado do servidor e geração de sites estáticos para aplicativos da web baseados em React.",
+      "image": "/images/next.png"
+    },
+    {
+      "name": "Ionic",
+      "description": "Ionic é um SDK de código aberto completo para desenvolvimento de aplicativo móvel híbrido criado por Max Lynch, Ben Sperry e Adam Bradley da Drifty Co. em 2013. A versão original foi lançada em 2013 e construída sobre AngularJS e Apache Cordova.",
+      "image": "/images/Ionic.png"
+    },
+    {
+      "name": "PostgreSQL",
+      "description": "PostgreSQL é um sistema gerenciador de banco de dados objeto relacional, desenvolvido como projeto de código aberto.",
+      "image": "https://www.postgresql.org/media/img/about/press/elephant.png"
+    }
+  ],
+  "works": [
+    {
+      "name": "tecteca",
+      "description": "A TecTeca é um aplicativo de \n      livros infantis, desenvovido-se um aplicativo em react native utilizadado\n      as pricipais tecnologias do mercado",
+      "imagesVertical": false,
+      "image": [
+        { "image": "/images/tecteca1.jpeg" },
+        { "image": "/images/tecteca2.jpeg" },
+        { "image": "/images/tecteca3.jpeg" }
+      ]
+    },
+    {
+      "name": "WT Soluções",
+      "description": "WT Soluções é uma empresa de saneamento básico, foi\ndesenvolvido uma api e um aplicativo para o gestão de tarefas e monitoramento\nde atividades",
+      "imagesVertical": true,
+      "image": [
+        { "image": "/images/wt.jpeg" },
+        { "image": "/images/wt3.jpeg" },
+        { "image": "/images/wt4.jpeg" },
+        { "image": "/images/wt5.jpeg" }
+      ]
+    }
+  ]
+}

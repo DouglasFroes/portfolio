@@ -108,7 +108,7 @@ export const imageDiv = styled.div`
 `
 
 export const authDiv = styled.div`
-  margin: 40px 4px 60px;
+  margin: 40px 4px 50px;
   h4 {
     font-size: 22px;
     font-weight: 700;

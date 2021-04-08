@@ -83,6 +83,7 @@ export const infImg = styled.div`
     width: 100%;
     overflow: hidden;
     border-radius: 5px;
+    margin: 0;
   }
 `
 export const infText = styled.div`
@@ -100,7 +101,7 @@ export const infText = styled.div`
   div {
   }
   h4 {
-    margin-top: 30px;
+    margin-top: 0px;
     font-size: 26px;
     font-weight: 700;
     color: #fff;

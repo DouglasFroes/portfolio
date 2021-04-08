@@ -95,9 +95,9 @@ export const button = styled.button`
   text-align: center;
   font-size: 20px;
   padding: 8px;
-  background: #03a9f3;
+  background: #a43f49;
   &:hover {
-    background: #0a4ff3;
+    background: #f43f49;
   }
   &:focus {
     outline: none;

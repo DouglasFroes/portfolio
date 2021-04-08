@@ -2,11 +2,12 @@ import React from 'react'
 import Head from 'next/head'
 import Slider from 'react-slick'
 
-import Layout from '../../components/layout'
+import Layout, { siteTitle } from '../../components/layout'
 
 import * as styled from '../../styles/work'
+import { works } from '../../../data.json'
 
-const Skills: React.FC = () => {
+const Works: React.FC = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -42,59 +43,13 @@ const Skills: React.FC = () => {
     autoplay: true,
     autoplaySpeed: 2000
   }
-  const skills = [
-    {
-      name: 'tecteca',
-      descripiton: `A TecTeca é um aplicativo de 
-      livros infantis, desenvovido-se um aplicativo em react native utilizadado
-      as pricipais tecnologias do mercado`,
-      imagesVertical: false,
-      image: [
-        { image: '/images/tecteca1.jpeg' },
-        { image: '/images/tecteca2.jpeg' },
-        { image: '/images/tecteca3.jpeg' }
-      ]
-    },
-    {
-      name: 'WT Soluções',
-      descripiton: `WT Soluticoes é uma empresa de saneamento basico, foi 
-      desenvoido uma api e um aplicativo para o gestão de tarefas e monitoramento
-      de atividades`,
-      imagesVertical: true,
-      image: [
-        { image: '/images/wt.jpeg' },
-        { image: '/images/wt2.jpeg' },
-        { image: '/images/wt3.jpeg' },
-        { image: '/images/wt4.jpeg' },
-        { image: '/images/wt5.jpeg' }
-      ]
-    }
-  ]
-
-  // const slider = [
-  //   { title: 'tecteca', image: '/images/tecteca1.jpeg' },
-  //   { title: 'tecteca', image: '/images/tecteca2.jpeg' },
-  //   { title: 'tecteca', image: '/images/tecteca3.jpeg' },
-  //   { title: 'WT Soluções', image: '/images/wt.jpeg' }
-  // ]
-  // const sliderRender = slider.map((item: any, index: any) => {
-  //   return (
-  //     <div key={index}>
-  //       <div className="separa">
-  //         <img src={item.image} alt={item.name} />
-  //         <p>{item.title}</p>
-  //       </div>
-  //     </div>
-  //   )
-  // })
-
-  const ListSkills = skills.map((item: any, index: any) => {
-    const sliderOrint = item?.imagesVertical ? settings : settings2
+  const ListWorks = works.map((item: any, index: any) => {
+    const sliderOrient = item?.imagesVertical ? settings : settings2
 
     return (
       <styled.itemSkill key={index}>
         <styled.viewSkill>
-          <Slider {...sliderOrint}>
+          <Slider {...sliderOrient}>
             {item?.image?.map((obj: any, index: any) => {
               return (
                 <div key={index}>
@@ -106,7 +61,7 @@ const Skills: React.FC = () => {
             })}
           </Slider>
           <h4>{item.name}</h4>
-          <p>{item.descripiton}</p>
+          <p>{item.description}</p>
         </styled.viewSkill>
       </styled.itemSkill>
     )
@@ -115,7 +70,7 @@ const Skills: React.FC = () => {
   return (
     <Layout page={3}>
       <Head>
-        <title>portfolio</title>
+        <title>{siteTitle}</title>
         <link
           rel="stylesheet"
           type="text/css"
@@ -129,23 +84,13 @@ const Skills: React.FC = () => {
       </Head>
       <styled.container>
         <styled.heading>
-          <h2>Portfolio</h2>
+          <h2>Trabalhos Realizados</h2>
           <div className="line-dec"></div>
-          <span>
-            Aenean sollicitudin ex mauris, lobortis lobortis diam euismod sit
-            amet. Duis ac elit vulputate, lobortis arcu quis, vehicula mauris.
-          </span>
         </styled.heading>
-        {/* <styled.carosel>
-          <Slider {...settings}>{sliderRender}</Slider>
-        </styled.carosel> */}
-        <styled.body>
-          {ListSkills}
-          {ListSkills}
-        </styled.body>
+        <styled.body>{ListWorks}</styled.body>
       </styled.container>
     </Layout>
   )
 }
 
-export default Skills
+export default Works
