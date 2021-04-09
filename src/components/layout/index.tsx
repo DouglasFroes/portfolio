@@ -58,7 +58,7 @@ const Layout: React.FC<any> = ({ children, page }) => {
               <Link href="/">
                 <img
                   src="https://avatars.githubusercontent.com/u/47641739?s=460&u=60d4e21d8f03d660978cef630b88284610261608&v=4"
-                  alt="douglasfroes"
+                  alt="douglasFroes"
                 />
               </Link>
             </styled.imageDiv>

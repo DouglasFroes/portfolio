@@ -36,7 +36,7 @@ export const heading = styled.div`
   div {
     width: 60px;
     height: 3px;
-    background-color: #a43f49;
+    background-color: #00adb59;
     margin: 10px auto;
   }
   span {

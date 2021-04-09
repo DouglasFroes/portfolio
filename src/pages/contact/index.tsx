@@ -87,7 +87,7 @@ const Contact: React.FC = () => {
       </Head>
       <styled.container>
         <styled.heading>
-          <h2>CONTATO - ME</h2>
+          <h2>CONTATE - ME</h2>
           <div className="line-dec"></div>
         </styled.heading>
 
@@ -95,17 +95,17 @@ const Contact: React.FC = () => {
           <styled.from onSubmit={handleSubmit}>
             <input
               type="text"
-              placeholder="Email"
-              onBlur={() => validateEmail(email.current)}
-              required
-              ref={email}
-            />
-            <input
-              type="text"
               placeholder="Nome"
               required
               ref={name}
               onBlur={() => validateName(name.current)}
+            />
+            <input
+              type="text"
+              placeholder="Email"
+              onBlur={() => validateEmail(email.current)}
+              required
+              ref={email}
             />
             <textarea
               placeholder="Mensagem"

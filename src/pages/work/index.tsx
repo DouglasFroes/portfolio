@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Head from 'next/head'
 import Slider from 'react-slick'
 
@@ -6,6 +6,7 @@ import Layout, { siteTitle } from '../../components/layout'
 
 import * as styled from '../../styles/work'
 import { works } from '../../../data.json'
+import RenderImage from '../../components/RenderImage'
 
 const Works: React.FC = () => {
   const settings = {
@@ -43,6 +44,7 @@ const Works: React.FC = () => {
     autoplay: true,
     autoplaySpeed: 2000
   }
+
   const ListWorks = works.map((item: any, index: any) => {
     const sliderOrient = item?.imagesVertical ? settings : settings2
 
@@ -51,11 +53,17 @@ const Works: React.FC = () => {
         <styled.viewSkill>
           <Slider {...sliderOrient}>
             {item?.image?.map((obj: any, index: any) => {
+              const [modal, setModal] = useState(false)
+              function md() {
+                setModal(!modal)
+              }
+
               return (
-                <div key={index}>
+                <div key={index} onClick={md}>
                   <div className="center">
                     <img className="imageWork" src={obj.image} alt={obj.name} />
                   </div>
+                  <RenderImage item={obj} open={modal} close={md} />
                 </div>
               )
             })}

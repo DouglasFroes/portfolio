@@ -36,7 +36,7 @@ export const heading = styled.div`
   div {
     width: 60px;
     height: 3px;
-    background-color: #a43f49;
+    background-color: #00adb5;
     margin: 10px auto;
   }
   span {
@@ -71,7 +71,7 @@ export const from = styled.form`
     margin-bottom: 15px;
     background-color: transparent;
     border-color: transparent;
-    color: #000;
+    color: #f0f0f0;
     text-align: center;
     font-size: 20px;
     padding: 8px;
@@ -83,6 +83,13 @@ export const from = styled.form`
       border-bottom: 2px solid coral;
       outline: none;
     }
+    ::placeholder {
+      color: #bfbfbf;
+    }
+  }
+
+  textarea {
+    min-height: 110px;
   }
 `
 
@@ -91,13 +98,14 @@ export const button = styled.button`
   background-color: transparent;
   border-radius: 15px;
   color: #fff;
+  border-color: transparent;
   font-weight: bold;
   text-align: center;
   font-size: 20px;
   padding: 8px;
-  background: #a43f49;
+  background: #00adb5;
   &:hover {
-    background: #f43f49;
+    opacity: 0.75;
   }
   &:focus {
     outline: none;

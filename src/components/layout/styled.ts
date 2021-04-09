@@ -8,8 +8,9 @@ export const menuResponsive = styled.div`
     position: fixed;
     top: 0;
     left: 0;
-    color: #a43f49;
-    background-color: #fff;
+    color: #08d9d6; //a43f49;
+    font-size: 22px;
+    background-color: #393e46;
     width: 60px;
     height: 60px;
     text-align: center;
@@ -20,7 +21,8 @@ export const menuResponsive = styled.div`
     cursor: pointer;
     top: 0;
     left: 0;
-    color: #a43f49;
+    color: #08d9d6; //a43f49;
+    font-size: 30px;
     width: 60px;
     height: 60px;
     text-align: center;
@@ -30,7 +32,7 @@ export const menuResponsive = styled.div`
   #menu-close {
     width: 100%;
     height: 60px;
-    background-color: #fff;
+    background-color: #222831;
   }
 
   @media screen and (max-width: 845px) {
@@ -44,7 +46,7 @@ export const menuDiv = styled.div`
   left: 10%;
   -webkit-transition: -webkit-transform 233ms cubic-bezier(0, 0, 0.21, 1);
   -webkit-overflow-scrolling: touch;
-  background-color: #a43f49;
+  background-color: #393e46; // #a43f49;
   box-sizing: border-box;
   height: 100%;
   max-height: 100%;
@@ -112,7 +114,7 @@ export const authDiv = styled.div`
   h4 {
     font-size: 22px;
     font-weight: 700;
-    color: #fff;
+    color: #f0f0f0;
     letter-spacing: 0.25px;
     margin-bottom: 0;
     margin-top: 0;
@@ -142,16 +144,19 @@ export const menuNav = styled.nav`
     display: inline-block;
     font-size: 16px;
     font-weight: 700;
-    color: #fff;
+    color: #f0f0f0;
     width: 100%;
     transition: all 0.5s;
     border-top: 2px solid #fff;
     margin: 0;
+    &:hover {
+      color: #08d9d6;
+    }
   }
 
   #active {
-    background: #fff;
-    color: #8c363e;
+    background: #222831; //fff;
+    color: #08d9d6;
   }
 
   li:last-child p {
@@ -181,6 +186,9 @@ export const socialDiv = styled.div`
     color: #fff;
     font-size: 14px;
     transition: all 0.5s;
+    &:hover {
+      color: #08d9d6;
+    }
   }
 
   @media screen and (max-width: 1680px) and (min-width: 846px) {
