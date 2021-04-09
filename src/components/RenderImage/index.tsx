@@ -1,7 +1,7 @@
 import React from 'react'
 import * as styled from './styled'
 
-function RenderImage({ item, open, close }: any) {
+function RenderImage({ item, open }: any) {
   return (
     <styled.renderImage
       isOpen={open}
