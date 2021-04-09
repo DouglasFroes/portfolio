@@ -12,7 +12,7 @@ const Home: React.FC = () => {
       </Head>
       <styled.container>
         <styled.heading>
-          <h2>Sobre mim</h2>
+          <h2>Sobre Mim</h2>
           <div className="line-dec" />
           <span>
             Ola👋, Me chamo Douglas. <br /> Sou programador full stack e

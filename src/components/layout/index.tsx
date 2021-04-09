@@ -37,6 +37,10 @@ const Layout: React.FC<any> = ({ children, page }) => {
           rel="stylesheet"
         />
         <link href="/fontawesome/css/all.css" rel="stylesheet"></link>
+        <link
+          href="https://fonts.googleapis.com/css?family=Montserrat"
+          rel="stylesheet"
+        ></link>
       </Head>
 
       <styled.menuResponsive>
