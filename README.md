@@ -1,6 +1,6 @@
-#Portfolio DouglasFroes
+**#Portfolio DouglasFroes**
 
-##Development mode
+**##Development mode**
 	
 	//install dependencies
 
@@ -10,7 +10,7 @@
 
 	npm dev or yarn dev
 
-##In production
+**##In production**
 
 	//install dependencies
 	
@@ -22,3 +22,6 @@
 	
 	//start
 	npm start or yarn start
+  
+ **#View**
+  https://douglasfroes.netlify.app/
